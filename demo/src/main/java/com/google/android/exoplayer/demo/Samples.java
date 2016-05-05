@@ -79,6 +79,13 @@ import java.util.Locale;
     new Sample("Super speed (PlayReady)",
         "http://playready.directtaps.net/smoothstreaming/SSWSS720H264PR/SuperSpeedway_720.ism",
         Util.TYPE_SS),
+          new Sample("Taxi (PlayReady)",
+                  "http://playready.directtaps.net/smoothstreaming/ISMAAACLCPR/Taxi3_AACLC.ism/Manifest",
+                  Util.TYPE_SS),
+          new Sample("Tears of Steel (PlayReady)",
+                  "http://ces.streaming.mediaservices.windows.net/06d52e55-6b42-4c02-bdc5-8672a45e80ba/tearsofsteel_4k.ism",
+                  Util.TYPE_SS),
+
   };
 
   private static final String WIDEVINE_GTS_MPD =
