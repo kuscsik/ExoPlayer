@@ -350,8 +350,7 @@ public abstract class MediaCodecTrackRenderer extends SampleSourceTrackRenderer 
       int drmSessionState = drmSessionManager.getState();
       if (drmSessionState == DrmSessionManager.STATE_ERROR) {
         throw new ExoPlaybackException(drmSessionManager.getError());
-      } else if (drmSessionState == DrmSessionManager.STATE_OPENED
-          || drmSessionState == DrmSessionManager.STATE_OPENED_WITH_KEYS) {
+      } else if (drmSessionState == DrmSessionManager.STATE_OPENED_WITH_KEYS) {
         mediaCrypto = drmSessionManager.getMediaCrypto();
         requiresSecureDecoder = drmSessionManager.requiresSecureDecoderComponent(mimeType);
       } else {
